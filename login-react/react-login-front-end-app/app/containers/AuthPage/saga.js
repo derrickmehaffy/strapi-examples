@@ -18,17 +18,17 @@ export function* submitForm() {
 
     switch (formType) {
       case 'login':
-        requestURL = 'http://localhost:1337/auth/local';
+        requestURL = 'https://api.canonn.fyi/auth/local';
         break;
       case 'register':
-        requestURL = 'http://localhost:1337/auth/local/register';
+        requestURL = 'https://api.canonn.fyi/auth/local/register';
         break;
       case 'reset-password':
-        requestURL = 'http://localhost:1337/auth/reset-password';
+        requestURL = 'https://api.canonn.fyi/auth/reset-password';
         break;
       case 'forgot-password':
-        requestURL = 'http://localhost:1337/auth/forgot-password';
-        set(body, 'url', 'http://localhost:3000/auth/reset-password');
+        requestURL = 'https://api.canonn.fyi/auth/forgot-password';
+        set(body, 'url', 'https://test.canonn.fyi/auth/reset-password');
         break;
       default:
 
