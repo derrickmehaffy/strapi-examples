@@ -18,7 +18,7 @@ import { LOG_USER } from './constants';
 
 export function* login(action) {
   try {
-    const requestURL = `https://api.canonn.fyi/auth/${action.provider}/callback${action.search}`;
+    const requestURL = `https://api.canonn.tech:2083/auth/${action.provider}/callback${action.search}`;
     const response = yield call(request, requestURL, { method: 'GET' });
 
     if (response.jwt) {

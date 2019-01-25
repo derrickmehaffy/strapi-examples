@@ -13,7 +13,7 @@ import './styles.scss';
 
 function SocialLink({ provider }) {
   return (
-    <a href={`https://api.canonn.fyi/connect/${provider}`} className="link">
+    <a href={`https://api.canonn.tech:2083/connect/${provider}`} className="link">
       <Button type="button" social={provider} style={{ width: '100%' }}>
         <i className={`fa fa-${provider}`} />
         {capitalize(provider)}
